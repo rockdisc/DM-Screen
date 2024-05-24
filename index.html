@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Screen</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="sideBar" >
+        
+        <div class="big-container" id="genContainer">
+            <h2>Generators</h2>
+            <div class="mid-container" id="gContainer">
+                <div class="small-container" id="npcContainer">
+                    <h3>
+                        NPC 
+                    </h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="npc()" class="button" id="npcButton" >Create NPC</button>
+                    <div class="tiny-container" id="nContainer"></div>
+                </div>
+                
+                <div class="small-container" id="itemContainer">
+                    <h3>
+                        Item 
+                    </h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="Item()" class="button" id="itemButton">Create Item</button>
+                    <div class="tiny-container" id="iContainer"></div>
+                </div>
+
+                <div class="small-container" id="eventContainer">
+                    <h3>
+                        Events
+                    </h3>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="Event()" class="button" id="eventButton">Create Event</button>
+                    <div class="tiny-container" id="eContainer"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="big">
+    <div id="topContainer">
+
+    <div id="linkContainer">
+            <a target="_blank" href="https://docs.google.com/presentation/d/1K8AWcaNib4DxYNszVUlMlV3hQIjPs3_qV0DkrTGMjuM/edit?usp=sharing">Player Help</a>
+        |
+        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1x-AjaZEB9uCZc449_D30WdUB3SIuuqZhVpX5sxFs8kE/edit?usp=sharing">Session Report</a>
+        |
+        <a target="_blank" href="https://donjon.bin.sh">Donjon</a>
+        |
+        <a target="_blank" href="https://inkarnate.com/maps/">Inkarnate</a>
+        |
+        <a target="_blank" href="https://probabletrain.itch.io/dungeon-scrawl">Dungeon Scrawl</a>
+        |
+        <a target="_blank" href="https://www.fantasytowngenerator.com/user/settlements">Fantasy Map Generator</a>
+        |
+        <a target="_blank" href="https://www.owlbear.rodeo/profile">Owl Bear Rodeo</a>
+        |
+        <a target="_blank" href="https://koboldplus.club">Kobold Fight Club</a>
+        |
+        <a target="_blank" href="https://www.dungeonmastersvault.com/pages/dnd/5e/character-builder#">DM Vault</a>
+    </div>
+    <hr>
+    <h1> <span id="titles">DM Screen</span></h1>
+    </div>
+    <div id="main">
+
+        <div class="big-container" id="playerContainer">
+            <h2>Players</h2>
+            <div class="small-container" id="pContainer">
+                <div id="player1" class="player"> 
+                    <p class="pThing">
+                    <span class="ma">Mark</span>  
+                    Mana: <span id="manaTotal1"></span>
+                </p>
+                    <br>
+                    <button type="button" class="button" id="apply" onclick="apply1()">Apply Mana</button>
+                    <input type="number" id="cost1" class="cost" placeholder="Cost">
+                    <button type="button" class="button" id="use" onclick="use1()">Use</button>
+                    <h3>Passive Perception: <span id="PP1"></span></h3>
+                </div>
+                <div id="player2" class="player">
+                    <p class="pThing"> 
+                    <span class="ma">Jackson</span>  
+                    Mana: <span id="manaTotal2"></span>
+                    </p>
+                    <br>
+                    <button type="button" class="button" id="apply" onclick="apply2()">Apply Mana</button>
+                    <input type="number" id="cost2" class="cost" placeholder="Cost">
+                    <button type="button" class="button" id="use" onclick="use2()">Use</button>
+                    <h3>Passive Perception: <span id="PP2"></span></h3>
+                </div>
+                <div id="player3" class="player">
+                    <p class="pThing"> 
+                    <span class="ma">Jack</span>  
+                    Mana: <span id="manaTotal3"></span>
+                    </p>
+                    <br>
+                    <button type="button" class="button" id="apply" onclick="apply3()">Apply Mana</button>
+                    <input type="number" id="cost3" class="cost" placeholder="Cost">
+                    <button type="button" class="button" id="use" onclick="use3()">Use</button>
+                    <h3>Passive Perception: <span id="PP3"></span></h3>
+                </div>
+                <div id="player4" class="player">
+                    <p class="pThing"> 
+                    <span class="ma">Felix</span>
+                    Mana: <span id="manaTotal4"></span>
+                    </p>
+                    <br>
+                    <button type="button" class="button" id="apply" onclick="apply4()">Apply Mana</button>
+                    <input type="number" id="cost4" class="cost" placeholder="Cost">
+                    <button type="button" class="button" id="use" onclick="use4()">Use</button>
+                    <h3>Passive Perception: <span id="PP4"></span></h3>
+                </div>
+                <div id="player5" class="player">
+                    <p class="pThing"> 
+                    <span class="ma">James</span>
+                    Mana: <span id="manaTotal5"></span>
+                    </p>
+                    <br>
+                    <button type="button" class="button" id="apply" onclick="apply5()">Apply Mana</button>
+                    <input type="number" id="cost5" class="cost" placeholder="Cost">
+                    <button type="button" class="button" id="use" onclick="use5()">Use</button>
+                    <h3>Passive Perception: <span id="PP5"></span></h3>
+                </div>
+                <div id="player6" class="player">
+                    <p class="pThing"> 
+                    <span class="ma">Mish</span>  
+                    Mana: <span id="manaTotal6"></span>
+                    </p>
+                    <br>
+                    <button type="button" class="button" id="apply" onclick="apply6()">Apply Mana</button>
+                    <input type="number" id="cost6" class="cost" placeholder="Cost">
+                    <button type="button" class="button" id="use" onclick="use6()">Use</button>
+                    <h3>Passive Perception: <span id="PP6"></span></h3>
+                </div>
+                <div id="player7" class="player">
+                    <p class="pThing"> 
+                    <span class="ma">Ezra</span>  
+                    Mana: <span id="manaTotal7"></span>
+                    </p>
+                    <br>
+                    <button type="button" class="button" id="apply" onclick="apply7()">Apply Mana</button>
+                    <input type="number" id="cost7" class="cost" placeholder="Cost">
+                    <button type="button" class="button" id="use" onclick="use7()">Use</button>
+                    <h3>Passive Perception: <span id="PP7"></span></h3>
+                </div>
+                <div id="player8" class="player">
+                    <p class="pThing"> 
+                    <span class="ma">Logan</span>  
+                    Mana: <span id="manaTotal8"></span>
+                    </p>
+                    <br>
+                    <button type="button" class="button" id="apply" onclick="apply8()">Apply Mana</button>
+                    <input type="number" id="cost8" class="cost" placeholder="Cost">
+                    <button type="button" class="button" id="use" onclick="use8()">Use</button>
+                    <h3>Passive Perception: <span id="PP8"></span></h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="big-container" id="rollContainer">
+            <h2>Rolls</h2>
+            <div id="dieStuff">
+                <input type="text" placeholder="What die?" id="typDice" class="dieText">
+                <button type="button" class="button" id="dieButton" onclick="roll()">Roll</button>
+            </div>   
+            
+            <div id="rContainer" class="small-container"></div>
+        </div>
+       
+        <div class="big-container" id="mapContainer">
+            <h2>Maps</h2>
+            <div class="small-container" id="mContainer">
+                <img src="Aritia Map.jpeg" class="image">
+                <img src="Aritia Map.jpg" class="image">
+                <img src="Norsect.jpg" class="image">
+                <img src="thing.jpg" class="image">
+                <img src="Screenshot 2023-05-29 1941x22.png" class="image">
+                <img src="Screenshot 2024-05-21 194042.png" class="image">
+                <img src="Screenshot 2024-05-21 19443232.png" class="image">
+                <img src="Screenshot 2024-05-21 194659c.png" class="image">
+            </div>
+        </div>
+    
+        <div class="big-container" id="imageContainer">
+            <h2>Info</h2>
+            <div class="small-container" id="imContainer">
+                <div class="images">
+                    <img id="trans" src="transort.png">
+                </div>
+
+                <div class="images">
+                    <img id="trans2" src="Impactspeed.png">
+                </div>
+
+                <div class="images">
+                    <img src="conditions.png" id="trans3">
+                </div>
+
+                <div class="images">
+                    <img src="dc.png" id="trans7">
+                </div>
+
+                <div class="images">
+                    <img src="ac.png" id="trans4">
+                </div>
+
+                <div class="images">
+                    <img src="weather.png" id="trans5">
+                </div>
+
+                <div class="images">
+                    <img src="Sizes-5e.png" id="trans6">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="big-container" id="reminderContainer">
+            <h2>Reminders</h2>
+            <div class="small-container" id="remContainer">
+                <div class="reminders" id="rem1">
+                    <h3>Concentration</h3>
+                    <p>Spells need concentration to work if they go over 1 round and the caster uses any action, bonus action, etc. or if the caster is hit or in anyway contacted by something else.</p>
+                </div>
+                <div class="reminders" id="rem2">
+                    <h3>Casting Time</h3>
+                    <p>The time it takes for a spell to be cast is determined by the spell’s casting time.</p>
+                </div>
+        </div>
+
+
+
+
+        </div>
+
+</div>
+
+
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

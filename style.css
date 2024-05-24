@@ -1,0 +1,282 @@
+/* Overall */
+html {
+    width: 100vw;
+    height: 100vh;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(1, 18, 24);
+}
+#big {
+    display: flex;
+    flex-flow: column wrap;
+}
+.big-container {
+    background-color: rgb(57, 57, 57);
+    width: fit-content;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid rgb(93, 171, 231);
+}
+.button:hover {
+    background-color: rgb(1, 70, 128);
+}
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: scroll;
+    width: calc(100% - 250px);
+    height: calc(100vh - 90px);
+    border-radius: 10px;
+}
+#trans {
+    width: 650px;
+    position: relative;
+}
+.mid-container {
+    background-color: rgb(32, 47, 59);
+    margin: 10px;
+    padding: 4px;
+    border-radius: 10px;
+}
+.small-container {
+    background-color: rgba(85, 106, 141, 0);
+    margin: 10px;
+    padding: 4px;
+    border-radius: 10px;
+}
+.tiny-container {
+    background-color: rgb(87, 97, 118);
+    margin: 5px;
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: scroll;
+    height: 200px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#trans3 {
+    width: 650px;
+    position: relative;
+}
+#trans4 {
+    width: 650px;
+    position: relative;
+}
+#trans5 {
+    width: auto;
+    position: relative;
+}
+#trans7 {
+    width: 431px;
+    position: relative;
+}
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+}
+h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 0px;
+    color: aliceblue;
+}
+h3 {
+    text-align: center;
+    padding: 0px;
+    color: aliceblue;
+}
+#topContainer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 250px);
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+}
+#linkContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding-bottom:5px;
+}
+hr {
+    border: 2px dashed rgb(30, 133, 198);
+    border-radius: 3px;
+}
+/* Player */
+#pContainer {
+    width: 700px;
+    height: 500px;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+#playerContainer{
+    height: fit-content;
+}
+#imContainer {
+    display: flex;
+    width: 1100px;
+    flex-wrap: wrap;
+    height: 500px;
+    overflow: scroll;
+    justify-content: space-around;
+    gap: 10px;
+}
+a {
+    text-decoration: none;
+    color: rgb(249, 253, 255);
+    padding-top: 4px;
+}
+/* Generator */
+#genContainer {
+    height: 90%;
+    width: 90%;
+    overflow: scroll;
+    background-color: rgb(13, 16, 18);
+    border-radius: 10px;
+}
+#nContainer {
+    height: 300px;
+}
+#images {
+    width: fit-content;
+    height: fit-content;
+}
+#imageContainer {
+    height: fit-content;
+}
+#gContainer {
+    height: calc(100% - 110px);
+    overflow: scroll;
+    border-radius: 10px;
+}
+input {
+    border-radius: 2px;
+    margin-bottom: 2px;
+    border: none;
+    background-color: rgb(49, 148, 230);
+}
+::placeholder {
+    color: rgb(227, 227, 227);
+}
+button {
+    border-radius: 2px;
+    margin-bottom: 2px;
+    border: none;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(3, 102, 184);
+    color: rgb(227, 227, 227);
+}
+#sideBar {
+    right: 0;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+#trans2 {
+    width: 400px;
+    position: relative;
+}
+/* Maps */
+#mapContainer {
+    align-self:self-start;
+    border-radius: 10px;
+}
+#mContainer {
+    width: 900px;
+    height: 500px;
+    overflow: scroll;
+    border-radius: 10px;
+}
+.image {
+    width: 425px;
+    height: 275px;
+}
+#remContainer {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding-bottom:5px;
+}
+.reminders {
+    background-color: rgb(38, 91, 198);
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+p {
+    color: aliceblue;
+}
+.pThing {
+    margin: 0px;
+    padding: 0px;
+}
+#rContainer {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding-bottom:5px;
+    overflow: scroll;
+    border-radius: 10px;
+    height: 465px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px;
+}
+.cost {
+    width: 100px;
+}
+#dieStuff{
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#reminderContainer {
+    height: fit-content;
+}
+.player {
+    background-color: rgb(19, 68, 166);
+    margin-top: 10px;
+    padding: 5px;
+    width:220px;
+    height: 155px;
+    border-radius: 10px;
+    margin-left: 8px;
+}
+.ma {
+    font-size: 25px;
+}
+#rollContainer {
+    height: fit-content;
+}
+.dieText {
+    width: 105px;
+}
+#dieButton {
+    width: fit-content;
+}
+
+
