@@ -64,13 +64,13 @@ let PPDisplay7 = document.getElementById('PP7')
 let PPDisplay8 = document.getElementById('PP8')
 
 let pp1 = 16
-let pp2 = 15
+let pp2 = 10
 let pp3 = 13
 let pp4 = 13
 let pp5 = 13
-let pp6 = 13
+let pp6 = 15
 let pp7 = 13
-let pp8 = 13
+let pp8 = 11
 
 PPDisplay1.innerHTML = pp1
 PPDisplay2.innerHTML = pp2
