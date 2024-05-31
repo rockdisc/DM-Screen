@@ -65,11 +65,11 @@ let PPDisplay8 = document.getElementById('PP8')
 
 let pp1 = 16
 let pp2 = 15
-let pp3 = 13
+let pp3 = 11
 let pp4 = 13
-let pp5 = 13
-let pp6 = 13
-let pp7 = 13
+let pp5 = 15
+let pp6 = 16
+let pp7 = 11
 let pp8 = 13
 
 PPDisplay1.innerHTML = pp1
